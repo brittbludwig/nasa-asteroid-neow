@@ -1,0 +1,56 @@
+footer  {
+  background: #000;
+  padding: 40px 0 145px;
+  width: 100%;
+}
+
+footer h2 {
+  color: #ffffff;
+  font-family: 'SFCompactDisplayBold';
+  font-size: 18px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer .clear {
+  clear: both;
+}
+
+footer .footer-container {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 54px 0 0;
+}
+
+footer .contact-info {
+  display: inline-block;
+  width: 365px;
+}
+
+footer .contact-content {
+  line-height: 1.8em;
+  text-align: left;
+}
+
+footer .contact-content .name {
+  color: #ffffff;
+  display: block;
+  font-family: 'SFUITextRegular';
+  font-size: 18px;
+}
+
+footer .contact-content .email {
+  color: #ffffff;
+  display: block;
+  font-family: 'SFUITextRegular';
+  font-size: 14px;
+}
+
+footer .contact-content .icon svg {
+  color: #9a5fa9;
+  display: inline-block;
+  font-family: 'SFUITextRegular';
+  font-size: 18px;
+  margin: 0 6px 0 0;
+}
