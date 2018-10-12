@@ -15,10 +15,12 @@
 }
 
 .is-animating-in {
+	background-color: #000;
 	animation: bgOpacityIn 1s linear forwards;
 }
 
 .is-animating-out {
+	background-color: #000;
 	animation: bgOpacityOut 1s linear forwards;
 }
 
@@ -29,7 +31,7 @@
   }
   1% {
    display: block;
-   opacity: 0;
+   opacity: .4;
   }
   100% {
    opacity: 1;
@@ -40,8 +42,8 @@
   0% {
    opacity: 1;
   },
-  10% {
-   opacity: 1;
+  90% {
+   opacity: .85;
   }
   100% {
    display: none;

@@ -8,14 +8,6 @@ constructor(props){
       animateOut: this.props.animateOut
     }
   }
-	getDerivedStateFromProps(nextProps, prevState){
-		if(nextProps.activeIndex!==prevState.activeIndex){
-			return { activeIndex: nextProps.activeIndex};
-		} else if(nextProps.animateOut!==prevState.animateOut){
-			return { animateOut: nextProps.animateOut};
-		}
-		else return null;
-	}
 	componentDidUpdate(prevProps, prevState) {
 	  if(prevProps.activeIndex!==this.props.activeIndex ||
 	  	prevProps.animateOut!==this.props.animateOut){
@@ -35,7 +27,7 @@ constructor(props){
     return (
       <div 
       	style={{backgroundImage: `url(${background})`}}
-     		className={classes}
+     	className={classes}
       >
       </div>
     )
