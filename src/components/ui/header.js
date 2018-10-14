@@ -22,7 +22,7 @@ export default class Header extends Component {
         <div className="container">
           <div className='header-search'>
             <div className={this.state.isActive ? 'input-toggle input-toggle-active' : 'input-toggle'}>
-              <input type='text'></input>
+              <input type='text' defaultValue='Search coming soon :)'></input>
             </div>
             <div className='search-icon' onClick={this.addActiveClass}>
               <FaSearch />

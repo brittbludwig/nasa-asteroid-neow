@@ -11,11 +11,8 @@ export default class Background extends Component {
       activeIndex: 0,
       animateOut: 3
     }
-    this.updateImage = this.updateImage.bind(this);
+    this.updateStates = this.updateStates.bind(this);
     this.getImages = this.getImages.bind(this);
-  }
-  updateImage() {
-    
   }
   getImages() {
     const photos = this.state.data.photos
