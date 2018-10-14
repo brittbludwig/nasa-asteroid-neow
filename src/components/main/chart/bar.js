@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Bar = ({ width, height, right, starName }) => {
+const Bar = ({ width, height, right, starName, url }) => {
 	return(
-		<div className="bar" 
+		<div className='bar' 
 				 style={{width: `${width}%`, height: `${height}px`, right: `${right}%`}} >
 			<div className='starLabel'>
-				<span className="starName">
+				<a className='starName' href={url} target='_blank'  rel='noopener noreferrer'>
 					{starName}
-				</span>
+				</a>
 			</div>
 		</div>
 	)

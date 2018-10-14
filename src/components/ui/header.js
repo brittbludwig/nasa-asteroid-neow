@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
 import { FaSearch } from 'react-icons/fa';
 
 export default class Header extends Component {
@@ -28,6 +29,10 @@ export default class Header extends Component {
               <FaSearch />
             </div>
           </div>
+          <nav>
+            <NavLink to='/' activeClassName='is-active'>Graph</NavLink>
+            <NavLink to='/data-table' activeClassName='is-active'>Data Table</NavLink>
+          </nav>
         </div>
       </header>
     )

@@ -1,7 +1,9 @@
+@import '~react-table/react-table.css';
 @import './styles/ui/fonts.css';
 @import './styles/ui/header.css';
 @import './styles/ui/background.css';
 @import './styles/main/chart.css';
+@import './styles/main/data-table.css';
 @import './styles/ui/footer.css';
 
 body {

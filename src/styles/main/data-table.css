@@ -1,0 +1,64 @@
+.datatable {
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 100px 0;
+}
+
+h2 {
+  color: #ffffff;
+  font-family: 'SFCompactDisplayBold';
+  font-size: 18px;
+  letter-spacing: 5px;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date-picker {
+	border: solid 1px #ccc;
+	font-family: 'SFUITextRegular';
+	font-size: 14px;
+	margin: 10px;
+	padding: 4px;
+}
+
+.date {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.date h2 {
+	color: #ffffff;
+	display: inline-block;
+  font-family: 'SFUITextRegular';
+  font-size: 14px;
+	width: 50%;
+}
+
+.change-date {
+	color: #ffffff;
+	display: inline-block;
+  font-family: 'SFUITextRegular';
+  font-size: 14px;
+}
+
+.datatable-wrap {
+	background: #000;
+	display: flex;
+	height: 600px;
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+
+.ReactTable {
+	color: #fff;
+	font-family: 'SFUITextRegular';
+	font-size: 14px;
+	width: 1000px;
+}
+
+.ReactTable .rt-thead .rt-tr {
+	 font-family: 'SFCompactDisplayBold';
+  font-size: 18px;
+	text-align: left;
+}

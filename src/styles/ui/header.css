@@ -7,6 +7,24 @@
   width: 100%;
 }
 
+.challenge-header .container {
+  display: flex;
+  justify-content: center
+}
+
+nav {
+  text-align: left;
+  width: 30%;
+}
+
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'SFCompactDisplayBold';
+  font-size: 18px;
+  margin: 20px;
+}
+
 .header-search {
   position: relative;
   margin: 23px auto 0;
@@ -24,7 +42,7 @@
 }
 
 .header-search input[type="text"] {
-  width: 580px;
+  width: 380px;
 }
 
 .header-search input[type="text"]:focus {
@@ -32,41 +50,11 @@
 }
 
 .header-search .input-toggle-active {
-  left: -600px;
+  left: -400px;
   opacity: 1;
-  width: 580px;
+  width: 380px;
 }
-
 
 .header-search .search-icon svg {
   color: #9a5fa9;
 }
-
-
-.header-account {
- display: inline-block;
-}
-
-.header-account .profile-pic {
-  display: inline-block;
-  height: 36px;
-  margin: 0 16px 0 0;
-  width: 36px;
-}
-
-.dropdown {
-  display: inline-block;
-  list-style: none;
-}
-
-.dropdown.open .dropdown-menu {
-  display: block;
-}
-
-.dropdown-toggle {
-  font-family: 'SFUITextRegular';
-  font-size: 18px;
-  color: #000000;
-
-}
-

@@ -24,23 +24,26 @@ export default class StarChart extends Component {
 
     for (var i = 0; i < data.length; i++) {
       let name = data[i]['name']
+      let url = data[i]['nasa_jpl_url']
       let closestApproach = data[i]['close_approach_data'][0].miss_distance['miles']
       starData.push({
         'name': name, 
-        'closestApproach': closestApproach
+        'closestApproach': closestApproach,
+        'url': url
       });
       this.setState({
         starData: starData
+      }, () => {
+        this.renderBars() 
       })
     }
-    this.renderBars() 
   }
   handleChange(event) {
     const newDate = event.target.value
     this.setState({
       startDate: newDate
-    }, function() {
-        this.fetchStarData()
+    }, () => {
+      this.fetchStarData()
     })
   }
   renderBars() {
@@ -52,6 +55,7 @@ export default class StarChart extends Component {
          height={this.state.starData[i].closestApproach.substring(0,3)} 
          right={(100/barCount) * i}
          starName={this.state.starData[i].name}
+         url={this.state.starData[i].url}
          key={i} />
       )
     })
@@ -66,8 +70,9 @@ export default class StarChart extends Component {
     }).then(data => {
       this.setState({
         data: data.near_earth_objects[`${this.state.startDate}`]
+      }, () => {
+       this.getStarData() 
       })
-      this.getStarData()
     })
   }
   componentDidMount() {
